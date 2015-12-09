@@ -4,18 +4,45 @@ body {
   font-family: Roboto, sans-serif;
 }
 
+.placer{
+
+}
+
 li {
   list-style: none;
 }
 
-#header #navigation {
+#header #navigation .content {
+  width: 60rem;
+  position: absolute;
+  right: 0;
+  left: 0;
+  display: table;
+  margin: auto;
+}
+
+#header #navigation .content nav, #header #navigation .content .logo {
+  display: table-cell;
+  vertical-align: middle
+}
+
+#header #navigation .content nav {
+  text-align: right
+}
+
+#header #navigation .content nav .menu {
 
 }
 
-#header #navigation .menu {
-
-}
-
-#header #navigation .menu li {
+#header #navigation .content nav .menu li {
   display: inline-block;
+}
+
+#header #navigation .content nav .menu li a {
+  text-decoration: none;
+}
+
+#header #banner {
+  height: 30rem;
+  background: #444;
 }
