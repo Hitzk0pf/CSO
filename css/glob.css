@@ -4,8 +4,8 @@ body {
   font-family: Roboto, sans-serif;
 }
 
-.placer{
-
+a {
+  text-decoration: none;
 }
 
 li {
@@ -13,37 +13,47 @@ li {
 }
 
 #header #navigation .content {
-  width: 70rem;
-  margin: auto;
+  width: 60rem;
+  margin: 1rem auto 0;
   padding: 0.5rem 1rem;
   position: absolute;
   right: 0;
   left: 0;
   display: table;
-  border-bottom: 1.5px solid #fff;
 }
 
-#header #navigation .content .logo {
+#header .content .element.logo {
+    width:1%;
+    padding: 0 2rem 0 0;
 }
 
 #header #navigation .content .logo a {
 }
 
 #header #navigation .content .logo img {
-  height: 1.8rem;
+  height: 2rem;
 }
 
-#header #navigation .content nav, #header #navigation .content .logo {
+#header .content .element.featured {
+
+}
+
+#header .content .element.featured a {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+#header .content .element {
   display: table-cell;
   vertical-align: middle
 }
 
-#header #navigation .content nav {
+#header #navigation .content .element:last-child {
   text-align: right
 }
 
 #header #navigation .content nav .menu {
-
+  padding: 0
 }
 
 #header #navigation .content nav .menu li {
@@ -51,17 +61,22 @@ li {
 }
 
 #header #navigation .content nav .menu li:not(:last-child) {
-  margin: 0 1rem 0 0;
+  margin: 0 2rem 0 0;
+}
+
+#header .content .element.featured a, #header #navigation .content nav .menu li a {
+  color: #fff;
 }
 
 #header #navigation .content nav .menu li a {
-  color: #fff;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   font-weight: 300;
-  text-decoration: none;
 }
 
 #header #banner {
   height: 30rem;
-  background: #444;
+  width: 100%
+  background-color: #444;
+  background-image: url('http://cso.localhost/img/banner.jpg');
+  background-size: auto;
 }
