@@ -13,12 +13,24 @@ li {
 }
 
 #header #navigation .content {
-  width: 60rem;
+  width: 70rem;
+  margin: auto;
+  padding: 0.5rem 1rem;
   position: absolute;
   right: 0;
   left: 0;
   display: table;
-  margin: auto;
+  border-bottom: 1.5px solid #fff;
+}
+
+#header #navigation .content .logo {
+}
+
+#header #navigation .content .logo a {
+}
+
+#header #navigation .content .logo img {
+  height: 1.8rem;
 }
 
 #header #navigation .content nav, #header #navigation .content .logo {
@@ -38,7 +50,14 @@ li {
   display: inline-block;
 }
 
+#header #navigation .content nav .menu li:not(:last-child) {
+  margin: 0 1rem 0 0;
+}
+
 #header #navigation .content nav .menu li a {
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 300;
   text-decoration: none;
 }
 
