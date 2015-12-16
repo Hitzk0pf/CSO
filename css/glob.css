@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -13,8 +18,10 @@ li {
 }
 
 #header #navigation {
-  padding: 0.3rem 1rem;
+  padding: 0.95rem 0;
   background: #fff;
+  /*border-bottom: 2px solid #008BFF;*/
+  border-bottom: 1.5px solid #00ACFF;
 }
 
 #header #navigation .content {
@@ -32,6 +39,7 @@ li {
 
 #header #navigation .content .logo img {
   height: 1.7rem;
+  margin: 0.3rem 0 0 0;
 }
 
 #header .content .element {
@@ -40,7 +48,7 @@ li {
 }
 
 #header #navigation .content nav .menu {
-  padding: 0;
+  padding: 0 0 0 1.5rem;
   text-align: center;
 }
 
@@ -53,7 +61,7 @@ li {
 }
 
 #header .content .element.featured li:not(:last-child) {
-  margin: 0 1.2rem 0 0;
+  margin: 0 1.5rem 0 0;
 }
 
 #header #navigation .content nav .menu li a {
@@ -72,12 +80,41 @@ li {
 }
 
 #header .content .element.featured li a {
-  color: #00ACFF!important;
+  color: #00ACFF;
 }
+
 #header #banner {
   height: 30rem;
-  width: 100%
+  width: 100%;
+  display: table;
   background-color: #444;
   background-image: url('http://cso.localhost/img/banner.jpg');
   background-size: auto;
+}
+
+#header #banner .content {
+  text-align: center;
+  vertical-align: middle;
+  display: table-cell;
+}
+
+#header #banner .content h1, #header #banner .content h2 {
+  color: #f5f5f5;
+  font-weight: 300;
+}
+
+#header #banner .content h1 {
+  font-size: 2.7rem;
+}
+
+#header #banner .content h1:after {
+  width: 22rem;
+  margin: 0.5rem auto 0.3rem;
+  content: "";
+  display: block;
+  border-bottom: 1px solid #f5f5f5;
+}
+
+#header #banner .content h2 {
+  font-size: 2rem;
 }
