@@ -12,35 +12,26 @@ li {
   list-style: none;
 }
 
+#header #navigation {
+  padding: 0.3rem 1rem;
+  background: #fff;
+}
+
 #header #navigation .content {
   width: 60rem;
-  margin: 1rem auto 0;
-  padding: 0.5rem 1rem;
-  position: absolute;
-  right: 0;
-  left: 0;
+  margin: 0 auto;
   display: table;
 }
 
-#header .content .element.logo {
+#header .content .element.logo, #header .content .element.featured {
     width:1%;
-    padding: 0 2rem 0 0;
 }
 
 #header #navigation .content .logo a {
 }
 
 #header #navigation .content .logo img {
-  height: 2rem;
-}
-
-#header .content .element.featured {
-
-}
-
-#header .content .element.featured a {
-  font-size: 1.2rem;
-  font-weight: 500;
+  height: 1.7rem;
 }
 
 #header .content .element {
@@ -48,15 +39,12 @@ li {
   vertical-align: middle
 }
 
-#header #navigation .content .element:last-child {
-  text-align: right
-}
-
 #header #navigation .content nav .menu {
-  padding: 0
+  padding: 0;
+  text-align: center;
 }
 
-#header #navigation .content nav .menu li {
+#header #navigation .content nav .menu li, #header .content .element.featured li {
   display: inline-block;
 }
 
@@ -64,15 +52,28 @@ li {
   margin: 0 2rem 0 0;
 }
 
-#header .content .element.featured a, #header #navigation .content nav .menu li a {
-  color: #fff;
+#header .content .element.featured li:not(:last-child) {
+  margin: 0 1.2rem 0 0;
 }
 
 #header #navigation .content nav .menu li a {
-  font-size: 1.3rem;
+  color: #444;
+}
+
+#header #navigation .content nav .menu li a, #header .content .element.featured li a {
+  font-size: 1.05rem;
   font-weight: 300;
 }
 
+/*featured*/
+#header .content .element.featured {
+  white-space: nowrap;
+  text-align: right;
+}
+
+#header .content .element.featured li a {
+  color: #00ACFF!important;
+}
 #header #banner {
   height: 30rem;
   width: 100%
