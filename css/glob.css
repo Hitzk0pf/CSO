@@ -48,7 +48,6 @@ li {
 }
 
 #header #navigation .content nav .menu {
-  padding: 0 0 0 1.5rem;
   text-align: center;
 }
 
@@ -117,4 +116,93 @@ li {
 
 #header #banner .content h2 {
   font-size: 2rem;
+}
+
+/*CONTENT SECTION*/
+#content .content {
+    width: 90rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/*COMPANY FEATURES*/
+#content.features .content {
+  width: 60rem;
+  margin-top: 2.5rem;
+  text-align: center;
+}
+
+/*HEADING*/
+#content.features .content.heading h2, #content.features .content.heading h2:after {
+  color: #555;
+}
+
+#content.features .content.heading h2 {
+  font-size: 1.4rem;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+#content.features .content.heading h2:after {
+  width: 4rem;
+  margin: 0.7rem auto 0;
+  display: block;
+  content: "";
+  border-color: #eee;
+  border-width: 3px;
+  border-style: solid;
+}
+
+/*WIDGETS*/
+#content.features .content.elements .element {
+  width: 15rem;
+  display: inline-block;
+  vertical-align: top;
+}
+
+#content.features .content.elements .element:not(:last-child) {
+  margin: 0 4rem 0 0;
+}
+
+#content.features .content.elements .element .heading {
+}
+
+/*ICONS*/
+#content.features .content.elements .element .heading h3:before {
+  display: block;
+  font-family: FontAwesome;
+  color: #aaa;
+  font-size: 1.5rem;
+}
+
+#content.features .content.elements .element .heading h3:before, #content.features .content.elements .element .heading h3 {
+  margin: 0 0 0.5rem 0;
+}
+
+#content.features .content.elements .element.green-energy .heading h3:before {
+  content: "\f06c";
+}
+
+#content.features .content.elements .element.quality .heading h3:before {
+  content: "\f085";
+}
+
+#content.features .content.elements .element.pricing .heading h3:before {
+  content: "\f06b";
+}
+
+#content.features .content.elements .element .heading h3, #content.features .content.elements .element .text {
+  font-weight: 300;
+}
+
+#content.features .content.elements .element .heading h3 {
+  color: #999;
+  font-size: 1rem;
+  text-transform: uppercase;
+
+}
+
+#content.features .content.elements .element .text {
+  color: #555;
+  font-size: 0.95rem;
 }
