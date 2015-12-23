@@ -17,11 +17,23 @@ li {
   list-style: none;
 }
 
+.grey {
+  color: #444;
+}
+
+.light-grey {
+  color: #888;
+}
+
+.orange {
+  color: #FF8F00;
+}
+
 #header #navigation {
-  padding: 0.95rem 0;
+  padding: 1.1rem 0;
   background: #fff;
   /*border-bottom: 2px solid #008BFF;*/
-  border-bottom: 1.5px solid #00ACFF;
+  /*border-bottom: 1.5px solid #FF8F00;*/
 }
 
 #header #navigation .content {
@@ -32,6 +44,12 @@ li {
 
 #header .content .element.logo, #header .content .element.featured {
     width:1%;
+}
+
+#header .content .element.logo, #header .content .element.featured .locale .loc-shortcut{
+  margin: 0.1rem 0 0 0.25rem;
+  font-size: 0.87rem;
+  font-weight: 500;
 }
 
 #header #navigation .content .logo a {
@@ -76,10 +94,6 @@ li {
 #header .content .element.featured {
   white-space: nowrap;
   text-align: right;
-}
-
-#header .content .element.featured li a {
-  color: #00ACFF;
 }
 
 #header #banner {
@@ -135,12 +149,16 @@ li {
 
 /*HEADING*/
 #content.features .content.heading h2, #content.features .content.heading h2:after {
-  color: #555;
+  color: #777;
+}
+
+#content.features .content.heading {
+  display: none;
 }
 
 #content.features .content.heading h2 {
   font-size: 1.4rem;
-  font-weight: 300;
+  font-weight: 400;
   text-transform: uppercase;
 }
 
@@ -172,8 +190,8 @@ li {
 #content.features .content.elements .element .heading h3:before {
   display: block;
   font-family: FontAwesome;
-  color: #aaa;
-  font-size: 1.5rem;
+  color: #888;
+  font-size: 1.8rem;
 }
 
 #content.features .content.elements .element .heading h3:before, #content.features .content.elements .element .heading h3 {
@@ -204,6 +222,7 @@ li {
 }
 
 #content.features .content.elements .element .text {
-  color: #555;
-  font-size: 0.95rem;
+  color: #999;
+  font-size: 1rem;
+  line-height: 1.3rem;
 }
