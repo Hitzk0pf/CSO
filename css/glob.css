@@ -88,13 +88,14 @@ li {
   display: table;
   background-color: #444;
   background-image: url('http://cso.localhost/img/banner.jpg');
-  background-size: auto;
+  background-size: 100% auto;
 }
 
 #header #banner .content {
   text-align: center;
   vertical-align: middle;
   display: table-cell;
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 #header #banner .content h1, #header #banner .content h2 {
