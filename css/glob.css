@@ -226,3 +226,20 @@ li {
   font-size: 1rem;
   line-height: 1.3rem;
 }
+
+/* FOOTER */
+#footer .content .row:first-child .element, #footer .content .row:nth-child(2) .element {
+  display: inline-block;
+}
+
+#footer {
+  margin: 2rem 0 0 0;
+}
+
+#footer .content {
+  width: 60rem;
+  padding: 1rem 0 0 0;
+  margin: auto;
+  text-align: center;
+  border-top: 1px solid #eee;
+}
