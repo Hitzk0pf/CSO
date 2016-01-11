@@ -243,3 +243,7 @@ li {
   text-align: center;
   border-top: 1px solid #eee;
 }
+
+#footer .content .row:first-child .element a, #footer .content .row:nth-child(2) .element a {
+  color: #aaa;
+}
