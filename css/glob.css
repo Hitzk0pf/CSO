@@ -1,12 +1,12 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: Roboto, sans-serif;
 }
 
 body {
   margin: 0;
   padding: 0;
-  font-family: Roboto, sans-serif;
 }
 
 a {
@@ -97,7 +97,6 @@ li {
 }
 
 #header #banner {
-  height: 30rem;
   width: 100%;
   display: table;
   background-color: #444;
@@ -107,11 +106,19 @@ li {
   background-repeat: no-repeat;
 }
 
+#header #banner.index {
+  height: 30rem;
+}
+
+#header #banner.page {
+  height: 13rem;
+}
+
 #header #banner .content {
   text-align: center;
   vertical-align: middle;
   display: table-cell;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.35);
 }
 
 #header #banner .content h1, #header #banner .content h2 {
@@ -123,7 +130,7 @@ li {
   font-size: 2.7rem;
 }
 
-#header #banner .content h1:after {
+#header #banner.index .content h1:after {
   width: 22rem;
   margin: 0.5rem auto 0.3rem;
   content: "";
@@ -272,5 +279,58 @@ li {
 }
 
 #footer .content .row:nth-child(2) .element a {
-  font-size: 2.2rem;
+  font-size: 1.8rem;
+}
+
+/*PAGE DESIGN*/
+#page {
+
+}
+
+
+#page .content {
+  width: 70rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#page .content .element {
+  display: inline-block;
+  vertical-align: top;
+}
+
+#page .content .element {
+  text-align: left;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+#page .content .element#article {
+  width: 40rem;
+  padding: 1.5rem 3rem 0 0;
+}
+
+#page .content .element#sidebar {
+  height: 100%;
+  padding: 0.7rem;
+}
+
+#page .content .element#sidebar .item h3 {
+  min-width: 10rem;
+  font-size: 1.1rem;
+  font-weight: 400;
+  border-bottom: 1px dashed #eee;
+}
+
+#page .content .element#sidebar .item ul {
+  margin: 0.7rem 0;
+}
+
+#page .content .element#sidebar .item ul li {
+  padding: 0 0 0 0.5rem;
+  line-height: 1.6rem;
+}
+
+#page .content .element#sidebar .item ul li a {
+  color: #777;
 }
