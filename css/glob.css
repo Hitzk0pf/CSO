@@ -22,7 +22,7 @@ li {
 }
 
 .light-grey {
-  color: #888;
+  color: #aaa;
 }
 
 .orange {
@@ -233,17 +233,42 @@ li {
 }
 
 #footer {
-  margin: 2rem 0 0 0;
+  margin: 5rem 0 0 0;
 }
 
 #footer .content {
   width: 60rem;
-  padding: 1rem 0 0 0;
+  padding: 0.65rem 0 0 0;
   margin: auto;
   text-align: center;
   border-top: 1px solid #eee;
 }
 
-#footer .content .row:first-child .element a, #footer .content .row:nth-child(2) .element a {
-  color: #aaa;
+#footer .content .row:nth-child(1) .element a,
+#footer .content .row:nth-child(1) .element span,
+#footer .content .row:first-child .element:not(:last-child):after {
+  font-weight: 300!important;
+}
+
+
+/*FOOTER LINKS*/
+#footer .content .row:first-child .element:not(:last-child):after {
+  content: "|";
+  margin: 0 0.2rem;
+  display: inline-block;
+  color: #999;
+  font-size: 1.15rem;
+}
+
+/*SOCIAL MEDIA*/
+#footer .content .row:nth-child(2) {
+    margin: 0.7rem 0 0 0;
+}
+
+#footer .content .row:nth-child(2) .element:not(:last-child) {
+  margin: 0 1rem 0 0;
+}
+
+#footer .content .row:nth-child(2) .element a {
+  font-size: 2.2rem;
 }
