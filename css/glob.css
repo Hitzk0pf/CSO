@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   font-family: Roboto, sans-serif;
+  outline: none;
 }
 
 body {
@@ -19,6 +20,10 @@ li {
 
 .grey {
   color: #444;
+}
+
+.middle-grey {
+  color: #777;
 }
 
 .light-grey {
@@ -60,9 +65,15 @@ li {
   margin: 0.3rem 0 0 0;
 }
 
-#header .content .element {
+#header .content .element{
   display: table-cell;
   vertical-align: middle
+}
+
+#header .content .element.mobile-navi-button {
+  display: none;
+  font-size: 1.5rem!important;
+  cursor: pointer;
 }
 
 #header #navigation .content nav .menu {
@@ -151,7 +162,7 @@ li {
 
 /*COMPANY FEATURES*/
 #content.features .content {
-  width: 60rem;
+  width: 100%;
   margin-top: 2.5rem;
   text-align: center;
 }
@@ -247,6 +258,7 @@ li {
 
 #footer .content {
   width: 60rem;
+  max-width: 100%;
   padding: 0.65rem 0 0 0;
   margin: auto;
   text-align: center;
