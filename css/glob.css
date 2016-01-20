@@ -287,50 +287,8 @@ li {
 
 }
 
-
 #page .content {
   width: 70rem;
   margin: 0 auto;
   text-align: center;
-}
-
-#page .content .element {
-  display: inline-block;
-  vertical-align: top;
-}
-
-#page .content .element {
-  text-align: left;
-  font-size: 1rem;
-  font-weight: 300;
-} 
-
-#page .content .element#article {
-  width: 40rem;
-  padding: 1.5rem 3rem 0 0;
-}
-
-#page .content .element#sidebar {
-  height: 100%;
-  padding: 0.7rem;
-}
-
-#page .content .element#sidebar .item h3 {
-  min-width: 10rem;
-  font-size: 1.1rem;
-  font-weight: 400;
-  border-bottom: 1px dashed #eee;
-}
-
-#page .content .element#sidebar .item ul {
-  margin: 0.7rem 0;
-}
-
-#page .content .element#sidebar .item ul li {
-  padding: 0 0 0 0.5rem;
-  line-height: 1.6rem;
-}
-
-#page .content .element#sidebar .item ul li a {
-  color: #777;
 }
