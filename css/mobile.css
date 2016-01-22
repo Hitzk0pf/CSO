@@ -59,3 +59,19 @@ and (max-width: 1000px) {
       background: #f5f5f5;
     }
 }
+
+/*HOME WIDGETS BREAK*/
+@media only screen
+and (max-width: 880px) {
+  #content.features .content.elements .element {
+    width: 80%;
+    margin-left: auto!important;
+    margin-right: auto!important;
+    box-sizing: border-box;
+    display: block;
+  }
+
+  #content.features .content.elements .element:not(:last-child) {
+    margin-bottom: 2rem!important;
+  }
+}

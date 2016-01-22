@@ -111,7 +111,7 @@ li {
   width: 100%;
   display: table;
   background-color: #444;
-  background-image: url('http://cso.localhost/img/banner_full.jpg');
+  background-image: url('/img/banner_full.jpg');
   background-size: auto;
   background-position: center;
   background-repeat: no-repeat;
@@ -253,7 +253,7 @@ li {
 }
 
 #footer {
-  margin: 5rem 0 0 0;
+  margin: 5rem 0 1rem 0;
 }
 
 #footer .content {
