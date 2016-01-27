@@ -117,6 +117,12 @@ li {
   background-repeat: no-repeat;
 }
 
+#header #banner.page {
+  background-image: url('/img/banner.jpg');
+  background-repeat: repeat-x;
+  background-size: auto 100%;
+}
+
 #header #banner.index {
   height: 30rem;
 }
