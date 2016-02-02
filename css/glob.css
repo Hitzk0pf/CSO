@@ -5,8 +5,14 @@
   outline: none;
 }
 
+html {
+  min-height: 100%;
+  position: relative;
+}
+
 body {
-  margin: 0;
+  height: 100%;
+  margin: 0 0 6.5rem 0;
   padding: 0;
 }
 
@@ -240,7 +246,7 @@ li {
   font-weight: 300;
 }
 
-#content.features .content.elements .element .heading h3 {
+ #content.features .content.elements .element .heading h3 {
   color: #999;
   font-size: 1rem;
   text-transform: uppercase;
@@ -254,17 +260,22 @@ li {
 }
 
 /* FOOTER */
+#footer {
+  width: 60rem;
+  margin: auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0.5rem;
+  text-align: center;
+}
+
 #footer .content .row:first-child .element, #footer .content .row:nth-child(2) .element {
   display: inline-block;
 }
 
-#footer {
-  margin: 5rem 0 1rem 0;
-}
-
 #footer .content {
-  width: 60rem;
-  max-width: 100%;
+  width: 100%;
   padding: 0.65rem 0 0 0;
   margin: auto;
   text-align: center;

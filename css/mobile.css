@@ -75,3 +75,11 @@ and (max-width: 880px) {
     margin-bottom: 2rem!important;
   }
 }
+
+/*FOOTER BREAK*/
+@media only screen
+and (max-width: 1000px) {
+  #footer {
+    width: 90%;
+  }
+}
