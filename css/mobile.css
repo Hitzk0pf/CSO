@@ -32,7 +32,6 @@ and (max-width: 1000px) {
         background-color: #fff;
         position: absolute;
         left: 0;
-        border-top: 1px solid #eee;
     }
 
     #header #navigation .content nav.element .menu {
@@ -49,10 +48,7 @@ and (max-width: 1000px) {
       padding: 1.1rem 0;
       display: block;
       font-size: 1.1rem!important;
-    }
-
-    nav.element li:not(:last-child) a {
-      border-bottom: 1px solid #eee;
+      border-top: 1px solid #eee;
     }
 
     nav.element li a:hover {

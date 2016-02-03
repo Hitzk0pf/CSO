@@ -17,8 +17,20 @@ body {
   padding: 0;
 }
 
+a, a:hover, a:active {
+  text-decoration: none!important;
+}
+
 a {
-  text-decoration: none;
+  -webkit-transition: 100ms all 70ms;
+  -moz-transition: 100ms all 70ms;
+  -o-transition: 100ms all 70ms;
+  transition: 100ms all 70ms;
+}
+
+a:hover {
+  color: #FF8F00!important;
+  opacity: 0.7;
 }
 
 ul, ol {
@@ -46,6 +58,57 @@ ul, ol {
   background: #fff;
   /*border-bottom: 2px solid #008BFF;*/
   /*border-bottom: 1.5px solid #FF8F00;*/
+}
+
+/*LANGUAGE SELECT*/
+.language-content, .language-content:before {
+    position: absolute;
+    z-index: 5;
+}
+
+.language-content {
+    width: 12rem;
+    margin: 1.5rem 0 0 -9.75rem;
+    background: #fff;
+    box-sizing: border-box;
+    border: 1px solid #eee;
+    -webkit-box-shadow: 0 0 0.1rem 0 #333;
+    -moz-box-shadow: 0 0 0.1rem 0 #333;
+    box-shadow: 0 0 0.1rem 0 #333;
+}
+
+.language-content:before {
+    content: "";
+    width: 0;
+    height: 0;
+    margin: -0.7rem 1rem 0 0;
+    border-style: solid;
+    border-width: 0 0.8rem 0.7rem 0.8rem;
+    border-color: transparent transparent #aaa transparent;
+    right: 0;
+}
+
+.language-content ul {
+  text-align: left;
+}
+
+.language-content ul li {
+  margin: 0!important;
+  display: block!important;
+}
+
+.language-content ul li a {
+  display: block;
+  padding: 0.5rem 0.9rem;
+  font-weight: 400;
+}
+
+.language-content ul li a:hover {
+  background: #f7f7f7;
+}
+
+.language-content ul li a .icon {
+  margin: 0 0.4rem 0 0;
 }
 
 #header #navigation .content {
@@ -309,7 +372,7 @@ ul, ol {
 }
 
 #footer .content .row:nth-child(2) .element a {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
 }
 
 /*PAGE DESIGN*/
