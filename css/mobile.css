@@ -79,3 +79,12 @@ and (max-width: 1000px) {
     width: 90%;
   }
 }
+
+/*PAGE CONTENT BREAK 1*/
+@media only screen
+and (max-width: 1150px) {
+  #page .content {
+    width: 93%;
+    margin: 0 auto;
+  }
+}
