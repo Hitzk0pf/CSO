@@ -196,7 +196,7 @@ ul, ol {
   display: table;
   background-color: #444;
   background-image: url('../img/banner_full.jpg');
-  background-size: auto;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -219,7 +219,7 @@ ul, ol {
   text-align: center;
   vertical-align: middle;
   display: table-cell;
-  background-color: rgba(0, 0, 0, 0.35);
+  background-color: rgba(0, 0, 0, 0.00);
 }
 
 #header #banner.page .content {
